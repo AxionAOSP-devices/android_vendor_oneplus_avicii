@@ -1256,7 +1256,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
-    c2_manifest_vendor.xml \
     manifest_oplus_cameramdm.xml \
     manifest_oplus_vpp.xml \
     vendor.qti.gnss@4.0-service.xml \

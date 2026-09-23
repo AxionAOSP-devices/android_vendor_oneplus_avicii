@@ -21192,6 +21192,15 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+    name: "c2_manifest_vendor_audio.xml",
+    owner: "oneplus",
+    src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.gnss@2.1-service-qti.xml",
     owner: "oneplus",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
@@ -22111,7 +22120,7 @@ cc_prebuilt_binary {
     name: "vendor.qti.media.c2@1.0-service",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service",
             ],
@@ -22120,15 +22129,12 @@ cc_prebuilt_binary {
                 "libcutils",
                 "liblog",
                 "libcodec2_vndk",
-                "libqcodec2_base",
-                "libqcodec2_utils",
-                "libqcodec2_basecodec",
-                "libqcodec2_platform",
-                "libqcodec2_core",
                 "android.hardware.media.c2@1.0",
                 "libavservices_minijail",
                 "libbinder",
                 "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
                 "libvndksupport",
                 "libcodec2_hidl@1.0",
                 "libc++",
@@ -22138,7 +22144,49 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.media.c2audio@1.0-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqc2audio_base",
+                "libqc2audio_utils",
+                "libqc2audio_basecodec",
+                "libqc2audio_platform",
+                "libqc2audio_core",
+                "android.hardware.media.c2@1.0",
+                "libavservices_minijail",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "libvndksupport",
+                "libcodec2_hidl@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     strip: {
         none: true,
     },

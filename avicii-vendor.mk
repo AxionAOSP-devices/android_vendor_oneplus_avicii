@@ -1358,7 +1358,15 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
     init.oplus.fingerprints \
-    vl53l1_daemon_main
+    vl53l1_daemon_main \
+    libqc2audio_base \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_hwaudiocodec \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils
 
 PRODUCT_PACKAGES += \
     system_priv-app_OnePlusCameraService_lib_arm64_libCameraMDMHelper_so \

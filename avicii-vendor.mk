@@ -1367,7 +1367,24 @@ PRODUCT_PACKAGES += \
     libqc2audio_hwaudiocodec \
     libqc2audio_platform \
     libqc2audio_swaudiocodec \
-    libqc2audio_utils
+    libqc2audio_utils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_cvpfilter \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_imgtxrfilter \
+    libqcodec2_mockfilter \
+    libqcodec2_mockqc2filter \
+    libqcodec2_platform \
+    libqcodec2_streaminteg_filter \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    qti.video.utils.videobufferlayout \
+    libeva \
+    libqc2colorconvertfilter \
+    libqc2filter
 
 PRODUCT_PACKAGES += \
     system_priv-app_OnePlusCameraService_lib_arm64_libCameraMDMHelper_so \

@@ -16,6 +16,153 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmosal_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmosal_vendor.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrcinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsrcinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrc_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrc_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsrc_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfdconfigutils_proprietary",
+                "libwfddisplayconfig_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsinkinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsinkinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsink_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsink_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcsink_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvideotxr",
     owner: "oneplus",
     strip: {
@@ -1499,24 +1646,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadsprpc.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.dsp@1.0",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libion",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libadsprpc.so",
@@ -1536,7 +1665,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -2426,48 +2555,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libion",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmosal_vendor",
-    stem: "libmmosal",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmosal.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmmosal.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -4465,9 +4552,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libFileMux_proprietary.so",
+                "proprietary/vendor/lib64/libFileMux_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -4481,7 +4568,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4493,9 +4580,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/liba2dpoffload.so",
+                "proprietary/vendor/lib64/liba2dpoffload.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -4512,7 +4599,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4524,9 +4611,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libacdb-fts.so",
+                "proprietary/vendor/lib64/libacdb-fts.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -4540,7 +4627,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4552,9 +4639,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libacdbloader.so",
+                "proprietary/vendor/lib64/libacdbloader.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -4573,7 +4660,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4585,9 +4672,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libacdbrtac.so",
+                "proprietary/vendor/lib64/libacdbrtac.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -4601,7 +4688,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4613,9 +4700,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libadiertac.so",
+                "proprietary/vendor/lib64/libadiertac.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -4629,7 +4716,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4641,9 +4728,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libadm.so",
+                "proprietary/vendor/lib64/libadm.so",
             ],
             shared_libs: [
                 "liblog",
@@ -4656,7 +4743,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4668,9 +4755,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libaudcal.so",
+                "proprietary/vendor/lib64/libaudcal.so",
             ],
             shared_libs: [
                 "libutils",
@@ -4683,7 +4770,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4695,9 +4782,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libaudio_log_utils.so",
+                "proprietary/vendor/lib64/libaudio_log_utils.so",
             ],
             shared_libs: [
                 "libutils",
@@ -4711,7 +4798,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4723,9 +4810,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libaudioconfigstore.so",
+                "proprietary/vendor/lib64/libaudioconfigstore.so",
             ],
             shared_libs: [
                 "libexpat",
@@ -4737,7 +4824,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4749,9 +4836,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libaudioparsers.so",
+                "proprietary/vendor/lib64/libaudioparsers.so",
             ],
             shared_libs: [
                 "libutils",
@@ -4763,7 +4850,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4775,9 +4862,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libbatterylistener.so",
+                "proprietary/vendor/lib64/libbatterylistener.so",
             ],
             shared_libs: [
                 "android.hardware.health@1.0",
@@ -4800,7 +4887,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4864,9 +4951,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libcomprcapture.so",
+                "proprietary/vendor/lib64/libcomprcapture.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -4883,7 +4970,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -4895,9 +4982,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libexthwplugin.so",
+                "proprietary/vendor/lib64/libexthwplugin.so",
             ],
             shared_libs: [
                 "libaudioroute",
@@ -4914,7 +5001,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5057,9 +5144,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libhdmiedid.so",
+                "proprietary/vendor/lib64/libhdmiedid.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -5076,7 +5163,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5088,9 +5175,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libhdmipassthru.so",
+                "proprietary/vendor/lib64/libhdmipassthru.so",
             ],
             shared_libs: [
                 "libaudioparsers",
@@ -5108,7 +5195,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5120,9 +5207,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libhfp.so",
+                "proprietary/vendor/lib64/libhfp.so",
             ],
             shared_libs: [
                 "libaudioroute",
@@ -5139,7 +5226,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5193,6 +5280,62 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpdecoder_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmrtpdecoder_vendor.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libmmosal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpencoder_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmmrtpencoder_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5713,9 +5856,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libqtigef.so",
+                "proprietary/vendor/lib64/libqtigef.so",
             ],
             shared_libs: [
                 "liblog",
@@ -5727,7 +5870,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5739,9 +5882,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libsndmonitor.so",
+                "proprietary/vendor/lib64/libsndmonitor.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -5758,7 +5901,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5770,9 +5913,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libspkrprot.so",
+                "proprietary/vendor/lib64/libspkrprot.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -5789,7 +5932,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5801,9 +5944,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libssrec.so",
+                "proprietary/vendor/lib64/libssrec.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -5821,7 +5964,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5833,9 +5976,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so",
+                "proprietary/vendor/lib64/libwfdcodecv4l2_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -5852,7 +5995,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5864,9 +6007,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdcommonutils_proprietary.so",
+                "proprietary/vendor/lib64/libwfdcommonutils_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -5875,7 +6018,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libion",
                 "libprocessgroup",
-                "libwfddisplayconfig_proprietary",
+                "libwfddisplayconfig_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -5883,7 +6026,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5895,9 +6038,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdconfigutils_proprietary.so",
+                "proprietary/vendor/lib64/libwfdconfigutils_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -5914,7 +6057,37 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfddisplayconfig_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfddisplayconfig_vendor.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "vendor.display.config@2.0",
+                "libdisplayconfig.qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5956,15 +6129,16 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdhdcpcp.so",
+                "proprietary/vendor/lib64/libwfdhdcpcp.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libwfdutils_proprietary",
                 "libc++",
                 "libc",
                 "libm",
@@ -5972,7 +6146,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -5984,9 +6158,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdhdcpservice_proprietary.so",
+                "proprietary/vendor/lib64/libwfdhdcpservice_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -6003,7 +6177,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6015,9 +6189,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdmminterface_proprietary.so",
+                "proprietary/vendor/lib64/libwfdmminterface_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -6030,7 +6204,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6042,9 +6216,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdmmservice_proprietary.so",
+                "proprietary/vendor/lib64/libwfdmmservice_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -6059,7 +6233,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6071,16 +6245,16 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdmmsrc_proprietary.so",
+                "proprietary/vendor/lib64/libwfdmmsrc_proprietary.so",
             ],
             shared_libs: [
                 "libbinder",
                 "libmmosal_vendor",
                 "liblog",
                 "libutils",
-                "libmmrtpencoder_proprietary",
+                "libmmrtpencoder_vendor",
                 "libFileMux_proprietary",
                 "libcutils",
                 "libtinyalsa",
@@ -6093,7 +6267,12 @@ cc_prebuilt_library_shared {
                 "libwfdcodecv4l2_proprietary",
                 "libwfdmmservice_proprietary",
                 "libhidlbase",
+                "qti.video.utils.videobufferlayout",
                 "android.hardware.graphics.mapper@2.0",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-enums",
+                "libfmq",
                 "libc++",
                 "libc",
                 "libm",
@@ -6101,7 +6280,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6113,9 +6292,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdmodulehdcpsession.so",
+                "proprietary/vendor/lib64/libwfdmodulehdcpsession.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -6132,7 +6311,37 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdrtsp_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfdrtsp_vendor.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "libutils",
+                "libmmosal_vendor",
+                "libwfdcommonutils_proprietary",
+                "libwfdconfigutils_proprietary",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6174,9 +6383,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdsessionmodule.so",
+                "proprietary/vendor/lib64/libwfdsessionmodule.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
@@ -6193,7 +6402,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6205,9 +6414,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdsourcesession_proprietary.so",
+                "proprietary/vendor/lib64/libwfdsourcesession_proprietary.so",
             ],
             shared_libs: [
                 "liblog",
@@ -6220,7 +6429,6 @@ cc_prebuilt_library_shared {
                 "libwfdmminterface_proprietary",
                 "libmedia_helper",
                 "libwfdmmsrc_proprietary",
-                "libqdMetaData",
                 "libhidlbase",
                 "libwfdsourcesm_proprietary",
                 "libc++",
@@ -6230,7 +6438,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6242,27 +6450,26 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdsourcesm_proprietary.so",
+                "proprietary/vendor/lib64/libwfdsourcesm_proprietary.so",
             ],
             shared_libs: [
                 "libc++",
                 "libcutils",
                 "libutils",
-                "libwfdrtsp_proprietary",
-                "libmmrtpencoder_proprietary",
-                "libmmrtpdecoder_proprietary",
-                "libwfduibcinterface_proprietary",
+                "libwfdrtsp_vendor",
+                "libmmrtpencoder_vendor",
+                "libmmrtpdecoder_vendor",
+                "libwfduibcinterface_vendor",
                 "libwfdmmsrc_proprietary",
                 "libmmosal_vendor",
                 "libwfdcommonutils_proprietary",
                 "libwfdconfigutils_proprietary",
-                "libqdMetaData",
                 "libwfdmminterface_proprietary",
                 "libwfdmodulehdcpsession",
                 "libhidlbase",
-                "libwfddisplayconfig_proprietary",
+                "libwfddisplayconfig_vendor",
                 "liblog",
                 "libc",
                 "libm",
@@ -6270,7 +6477,37 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcinterface_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwfduibcinterface_vendor.so",
+            ],
+            shared_libs: [
+                "libmmosal_vendor",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrcinterface_vendor",
+                "libwfduibcsinkinterface_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6432,14 +6669,17 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/libwfdutils_proprietary.so",
+                "proprietary/vendor/lib64/libwfdutils_proprietary.so",
             ],
             shared_libs: [
                 "libmmosal_vendor",
                 "liblog",
+                "libbase",
                 "libion",
+                "libdmabufheap",
+                "libvmmem",
                 "libc++",
                 "libc",
                 "libm",
@@ -6447,7 +6687,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6459,9 +6699,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/soundfx/libasphere.so",
+                "proprietary/vendor/lib64/soundfx/libasphere.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -6473,7 +6713,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -6486,9 +6726,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/soundfx/libqcbassboost.so",
+                "proprietary/vendor/lib64/soundfx/libqcbassboost.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -6500,7 +6740,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -6513,9 +6753,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/soundfx/libqcreverb.so",
+                "proprietary/vendor/lib64/soundfx/libqcreverb.so",
             ],
             shared_libs: [
                 "liblog",
@@ -6527,7 +6767,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -6540,9 +6780,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/soundfx/libqcvirt.so",
+                "proprietary/vendor/lib64/soundfx/libqcvirt.so",
             ],
             shared_libs: [
                 "liblog",
@@ -6554,7 +6794,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -6567,9 +6807,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/soundfx/libshoebox.so",
+                "proprietary/vendor/lib64/soundfx/libshoebox.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -6581,7 +6821,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
@@ -6594,9 +6834,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/vendor.oplus.hardware.performance@1.0.so",
+                "proprietary/vendor/lib64/vendor.oplus.hardware.performance@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -6610,7 +6850,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6623,9 +6863,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
+                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -6639,7 +6879,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -6651,9 +6891,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so",
+                "proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -6662,6 +6902,7 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.wifidisplaysession@1.0_vendor",
                 "libwfdsessionmodule",
                 "liblog",
+                "libwfdcommonutils_proprietary",
                 "libc++",
                 "libc",
                 "libm",
@@ -6669,7 +6910,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -20394,9 +20635,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/odm/lib/libaudioEngineerTest.so",
+                "proprietary/odm/lib64/libaudioEngineerTest.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -20411,7 +20652,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
     device_specific: true,
 }
@@ -21854,6 +22095,15 @@ dex_import {
         "proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar",
     ],
     system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.hardware.wifidisplaysession-service.xml",
+    owner: "oneplus",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -23909,7 +24159,7 @@ cc_prebuilt_binary {
     name: "wfdhdcphalservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wfdhdcphalservice",
             ],
@@ -23931,16 +24181,15 @@ cc_prebuilt_binary {
                 "libwfdhdcpservice_proprietary",
                 "libwfdcommonutils_proprietary",
                 "libwfdutils_proprietary",
-                "libqdMetaData",
                 "libavservices_minijail",
-                "libwfddisplayconfig_proprietary",
+                "libwfddisplayconfig_vendor",
                 "libc",
                 "libm",
                 "libdl",
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -23952,7 +24201,7 @@ cc_prebuilt_binary {
     name: "wfdvndservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wfdvndservice",
             ],
@@ -23969,7 +24218,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -23981,7 +24230,7 @@ cc_prebuilt_binary {
     name: "wifidisplayhalservice",
     owner: "oneplus",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wifidisplayhalservice",
             ],
@@ -24000,7 +24249,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },

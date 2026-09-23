@@ -9,6 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
+    vendor/oneplus/avicii/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/oneplus/avicii/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/oneplus/avicii/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/oneplus/avicii/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/oneplus/avicii/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/oneplus/avicii/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/oneplus/avicii/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Handset_cal.acdb \
     vendor/oneplus/avicii/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
@@ -1297,6 +1304,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
+    vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.display.color@1.0-service \
     vendor.oplus.hardware.cameraMDM@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
@@ -1387,7 +1395,16 @@ PRODUCT_PACKAGES += \
     libqc2filter \
     libcv_common \
     libqnnengine \
-    libvideotxr
+    libvideotxr \
+    libmmrtpdecoder_vendor \
+    libmmrtpencoder_vendor \
+    libwfddisplayconfig_vendor \
+    libwfdrtsp_vendor \
+    libwfduibcinterface_vendor \
+    libwfduibcsink_vendor \
+    libwfduibcsinkinterface_vendor \
+    libwfduibcsrc_vendor \
+    libwfduibcsrcinterface_vendor
 
 PRODUCT_PACKAGES += \
     system_priv-app_OnePlusCameraService_lib_arm64_libCameraMDMHelper_so \

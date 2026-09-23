@@ -1384,7 +1384,10 @@ PRODUCT_PACKAGES += \
     qti.video.utils.videobufferlayout \
     libeva \
     libqc2colorconvertfilter \
-    libqc2filter
+    libqc2filter \
+    libcv_common \
+    libqnnengine \
+    libvideotxr
 
 PRODUCT_PACKAGES += \
     system_priv-app_OnePlusCameraService_lib_arm64_libCameraMDMHelper_so \

@@ -16,6 +16,88 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvideotxr",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvideotxr.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqnnengine",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqnnengine.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcv_common",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcv_common.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqc2colorconvertfilter",
     owner: "oneplus",
     strip: {
@@ -4312,9 +4394,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.lito.so",
+                "proprietary/vendor/lib64/hw/audio.primary.lito.so",
             ],
             shared_libs: [
                 "libbase",
@@ -4339,7 +4421,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -4352,9 +4434,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/vendor/lib/hw/sound_trigger.primary.lito.so",
+                "proprietary/vendor/lib64/hw/sound_trigger.primary.lito.so",
             ],
             shared_libs: [
                 "liblog",
@@ -4370,7 +4452,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,

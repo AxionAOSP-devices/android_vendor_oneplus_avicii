@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2019, 2021 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2019 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
     -->
@@ -71,13 +71,13 @@
                 <CodecName>H.264</CodecName>
                 <Profile>0</Profile>
                 <Level>6</Level>
-                <HorizontalResolution>4096</HorizontalResolution>
+                <HorizontalResolution>3840</HorizontalResolution>
                 <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
                 <FrameRateControlSupp>1</FrameRateControlSupp>
-                <VideoFps>60</VideoFps>
+                <VideoFps>30</VideoFps>
                 <TranscodingMode>1</TranscodingMode>
                 <NonTranscodingMode>1</NonTranscodingMode>
             </VideoCodec1>
@@ -86,13 +86,13 @@
                 <CodecName>H.264</CodecName>
                 <Profile>1</Profile>
                 <Level>6</Level>
-                <HorizontalResolution>4096</HorizontalResolution>
+                <HorizontalResolution>3840</HorizontalResolution>
                 <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
                 <FrameRateControlSupp>1</FrameRateControlSupp>
-                <VideoFps>60</VideoFps>
+                <VideoFps>30</VideoFps>
                 <TranscodingMode>1</TranscodingMode>
                 <NonTranscodingMode>1</NonTranscodingMode>
             </VideoCodec2>
@@ -101,13 +101,13 @@
                 <CodecName>H.265</CodecName>
                 <Profile>0</Profile>
                 <Level>4</Level>
-                <HorizontalResolution>4096</HorizontalResolution>
+                <HorizontalResolution>3840</HorizontalResolution>
                 <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
                 <FrameRateControlSupp>1</FrameRateControlSupp>
-                <VideoFps>60</VideoFps>
+                <VideoFps>30</VideoFps>
                 <TranscodingMode>1</TranscodingMode>
                 <NonTranscodingMode>1</NonTranscodingMode>
             </VideoCodec3>
@@ -160,7 +160,7 @@
 
         <!--  disable HDCP by default -->
         <ContentProtection>
-            <Valid>0</Valid>
+            <Valid>1</Valid>
             <!--
                 Valid values WFD_HDCP_2_0,
                 WFD_HDCP_2_1 and WFD_HDCP_2_2
@@ -704,10 +704,12 @@
         To disable/enable audio stream playback
         support during power suspend - 0 or 1
     -->
+
     <!-- #ifdef OPLUS_BUG_STABILITY -->
-    <!-- Zehua.Zhang@MULTIMEDIA.AUDIOSERVER.FRAMEWORK.4695730, 2022/11/07, Modify for audio should still playing on TV after screen off -->
+    <!-- Liang.Xu@PSW.MM.AudioServer.Base.1297775, 2018/12/12, -->
+    <!-- Modify for audio should still playing on TV after screen off -->
     <AudioStreamInSuspend>1</AudioStreamInSuspend>
-    <!-- #endif OPLUS_BUG_STABILITY -->
+    <!-- #endif //OPLUS_BUG_STABILITY -->
 
     <!--
         Compensation delay for audio

@@ -695,6 +695,7 @@ PRODUCT_PACKAGES += \
     libacdbloader \
     libacdbrtac \
     libadiertac \
+    libadm \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \

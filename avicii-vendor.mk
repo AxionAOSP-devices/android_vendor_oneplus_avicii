@@ -747,7 +747,6 @@ PRODUCT_PACKAGES += \
     libdataitems \
     libdiag \
     libdisp-aba \
-    libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \

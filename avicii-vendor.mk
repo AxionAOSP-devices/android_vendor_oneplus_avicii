@@ -208,32 +208,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/odm/firmware/awinic.haptic.effect.so:$(TARGET_COPY_OUT_ODM)/firmware/awinic.haptic.effect.so \
     vendor/oneplus/avicii/proprietary/odm/firmware/awinic_haptic_gun_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_gun_params.bin \
     vendor/oneplus/avicii/proprietary/odm/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_ODM)/firmware/awinic_haptic_params.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/132700/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/132700/oplus_vooc_fw_rt5125.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19015/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19015/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19016/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19016/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19101/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19101/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19102/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19102/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19125/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19125/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19126/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19126/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19127/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19127/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19128/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19128/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19191/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19191/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19192/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19192/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19335/oppo_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19335/oppo_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19501/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19501/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19517/oppo_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19517/oppo_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19521/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19521/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19525/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19525/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/19591/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19591/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20057/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20057/oplus_vooc_fw_rt5125.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20058/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20058/oplus_vooc_fw_rt5125.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20111/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20111/oplus_vooc_fw_op10.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20113/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20113/oplus_vooc_fw_op10.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20127/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20127/oplus_vooc_fw_op10.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20251/oplus_vooc_fw_op10.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20251/oplus_vooc_fw_op10.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20669/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20669/oplus_vooc_fw_rt5125.bin \
     vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20801/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20801/oplus_vooc_fw.bin \
-    vendor/oneplus/avicii/proprietary/odm/firmware/fastchg/20804/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20804/oplus_vooc_fw.bin \
     vendor/oneplus/avicii/proprietary/odm/firmware/notif_Glint_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Glint_RTP.bin \
     vendor/oneplus/avicii/proprietary/odm/firmware/notif_Nord_SMS_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Nord_SMS_RTP.bin \
     vendor/oneplus/avicii/proprietary/odm/firmware/ring_Crimson_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Crimson_RTP.bin \
@@ -511,13 +486,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/oneplus/avicii/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/oneplus/avicii/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b00 \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b01 \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b02 \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b03 \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b04 \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.elf \
-    vendor/oneplus/avicii/proprietary/vendor/firmware/lagoon_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.mdt \
     vendor/oneplus/avicii/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin \
     vendor/oneplus/avicii/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_hi846.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_hi846.bin \
     vendor/oneplus/avicii/proprietary/vendor/lib64/camera/com.qti.sensormodule.qtech_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qtech_imx616.bin \
@@ -551,126 +519,17 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libCameraMDMHelper \
-    btaudio_offload_if \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    android.hardware.bluetooth@1.0-impl-qti \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vulkan.adreno \
-    libC2D2 \
-    libCB \
-    libOpenCL \
-    libVkLayer_q3dtools \
-    libadreno_utils \
-    libadsprpc \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
-    libbtnv \
-    libc++_shared \
-    libc2d30_bltlib \
-    libcdsp_default_listener \
-    libcdsprpc \
-    libconfigdb \
-    libdiag \
-    libdsi_netctrl \
-    libdsutils \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libgpudataproducer \
-    libgsl \
-    libidl \
-    libllvm-glnext \
-    libllvm-qcom \
-    libmdmdetect \
-    libmdsprpc \
     libmmosal_vendor \
-    libnetmgr \
-    liboemnvbk_img_helper \
-    libqcmaputils \
-    libqdi \
-    libqdp \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmi_legacy \
-    libqmiservices \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libsoc_helper \
-    libsysmon_cdsp_skel \
-    libthermalclient \
-    libvppclient \
-    libvpphcp \
-    libvpphvx \
-    libvpplibrary \
-    libxml \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.memory.pasrmanager@1.0 \
-    vendor.qti.memory.pasrmanager@1.1 \
-    audio.primary.lito \
-    sound_trigger.primary.lito \
     libFileMux_proprietary \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioconfigstore \
-    libaudioparsers \
-    libbatterylistener \
-    libcapiv2svacnn \
-    libcapiv2vop \
-    libcomprcapture \
-    libexthwplugin \
-    libfastcrc \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libhdmiedid \
-    libhdmipassthru \
-    libhfp \
-    liblistensoundmodel2 \
     libmm-hdcpmgr \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
-    libmulawdec \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
     libqcodec2_platform \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqtigef \
-    libsndmonitor \
-    libspkrprot \
-    libssrec \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -691,14 +550,9 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_proprietary \
     libwfduibcsrcinterface_proprietary \
     libwfdutils_proprietary \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    vendor.oplus.hardware.performance@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
+    btaudio_offload_if \
     com.qti.eeprom.truly_cmb433 \
     com.qti.sensor.gc2375 \
     com.qti.sensor.gc5035 \
@@ -773,17 +627,33 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModule \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
+    audio.primary.lito \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
+    sound_trigger.primary.lito \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vulkan.adreno \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -798,6 +668,8 @@ PRODUCT_PACKAGES += \
     lib-siputility \
     lib-uceservice \
     libAlgoProcess \
+    libC2D2 \
+    libCB \
     libFaceBeautyLiteCap \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -805,6 +677,7 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libOPPO_Front_SCPortrait \
     libOPPO_SCPortrait \
+    libOpenCL \
     libPlatformValidatorShared \
     libPolarrRender \
     libQSEEComAPI \
@@ -820,9 +693,17 @@ PRODUCT_PACKAGES += \
     libVDDualCameraBlurlessAPI \
     libVDFusionBlurlessAPI_v2 \
     libVDSuperPhotoAPI \
+    libVkLayer_q3dtools \
     lib_oneplus_transparenteffect \
     lib_oneplus_watermark \
+    liba2dpoffload \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadreno_utils \
     libadsp_default_listener \
+    libadsprpc \
     libaoa \
     libaps_frame_registration \
     libapsdarksight \
@@ -852,8 +733,18 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioconfigstore \
+    libaudioparsers \
     libbatching \
+    libbatterylistener \
     libbitmlengine \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libbtnv \
+    libc++_shared \
+    libc2d30_bltlib \
     libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
@@ -867,19 +758,26 @@ PRODUCT_PACKAGES += \
     libcamxstatscore \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
+    libcapiv2svacnn \
+    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libchilog \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
     libcom.qti.chinodeutils \
+    libcomprcapture \
+    libconfigdb \
     libcpion \
     libcvface_api \
     libcvp_common \
     libcvpcpuRev_skel \
     libdataitems \
+    libdiag \
     libdisp-aba \
     libdisplayconfig.qti \
     libdisplayqos \
@@ -888,19 +786,34 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdsi_netctrl \
+    libdsutils \
     libdualcam_image_optical_zoom \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libdualcamirfusion.arcsoft \
+    libexthwplugin \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
     libgdtap \
     libgeofencing \
     libgnss \
     libgnsspps \
     libgps.utils \
+    libgpudataproducer \
+    libgsl \
+    libhdmiedid \
+    libhdmipassthru \
     libhdr_tm \
     libhexagon_nn_stub \
+    libhfp \
     libhistogram \
     libhta_hexagon_runtime \
+    libidl \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
@@ -909,6 +822,9 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodel2 \
+    libllvm-glnext \
+    libllvm-qcom \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
@@ -918,6 +834,8 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
+    libmdmdetect \
+    libmdsprpc \
     libmidasserviceintf \
     libminkdescriptor \
     libminksocket \
@@ -926,11 +844,14 @@ PRODUCT_PACKAGES += \
     libmorpho_dcface \
     libmorpho_image_refiner_deflicker \
     libmpbase \
+    libmulawdec \
     libnanopb \
+    libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
     libnlnetmgr \
+    liboemnvbk_img_helper \
     libofflinelog \
     libopenvx \
     libops \
@@ -944,14 +865,27 @@ PRODUCT_PACKAGES += \
     libpwirishalwrapper \
     libqcbor \
     libqcc_file_agent \
+    libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
     libqdutils \
     libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
     libqrtr \
     libqseed3 \
     libqsocket \
+    libqtigef \
     libqtikeymaster4 \
     librcc \
     libril-qc-hal-qmi \
@@ -960,6 +894,12 @@ PRODUCT_PACKAGES += \
     libril-qc-radioconfig \
     librilqmiservices \
     librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
     libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
@@ -968,12 +908,14 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmextension \
     libsdmutils \
+    libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
     libsensorslog \
     libsettings \
     libslimclient \
+    libsndmonitor \
     libsnpe_adsp \
     libsnpe_dsp_domains_v2 \
     libsns_device_mode_stub \
@@ -981,16 +923,21 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
+    libsoc_helper \
+    libspkrprot \
     libssc \
     libssc_default_listener \
     libssd \
+    libssrec \
     libstblur_capture_api \
     libstdc++_vendor \
     libswregistrationalgo \
     libsymphony-cpu \
     libsymphonypower \
     libsynx \
+    libsysmon_cdsp_skel \
     libsystem_health_mon \
+    libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
@@ -998,8 +945,13 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libtrustedapploader \
+    libvppclient \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
     libwms \
     libwqe \
+    libxml \
     libxtadapter \
     libxtwifi_server_protocol \
     libxtwifi_server_protocol_uri_v3 \
@@ -1007,6 +959,11 @@ PRODUCT_PACKAGES += \
     qtibus \
     qtimutex \
     sensors.ssc \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hta \
@@ -1020,6 +977,7 @@ PRODUCT_PACKAGES += \
     vendor.display.postproc@1.0 \
     vendor.oplus.hardware.cameraMDM@1.0 \
     vendor.oplus.hardware.cammidasservice@1.0 \
+    vendor.oplus.hardware.performance@1.0 \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
     vendor.pixelworks.hardware.feature@1.0 \
@@ -1037,6 +995,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -1049,6 +1009,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
@@ -1084,6 +1045,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -1095,6 +1059,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
     vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
     vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so \
@@ -1125,7 +1091,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
     vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
     vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
-    vendor.qti.diaghal@1.0 \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1168,12 +1133,11 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
+    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0_vendor \
-    vendor.oplus.hardware.orms@1.0 \
-    libaudioEngineerTest \
     fingerprint.18821_goodix9508_G2_4.default \
     fingerprint.18857_goodix9508_G2_4.default \
     fingerprint.18865_goodix9558_G3.default \
@@ -1187,6 +1151,7 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix9638_G6.default \
     libSonyIMX471RmscLibrary \
     libarcsoft_supervideostabilization \
+    libaudioEngineerTest \
     libgf_hal_19805_G6_3_oplus \
     libgf_hal_19805_G6_7_oplus \
     libgf_hal_19811_G6_oplus \
@@ -1208,6 +1173,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.ims@1.0 \
     vendor.oplus.hardware.oplusSensor@1.0 \
+    vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     odm_lib_rfsa_adsp_libc++_so_1 \
     odm_lib_rfsa_adsp_libc++abi_so_1 \
@@ -1330,9 +1296,6 @@ PRODUCT_PACKAGES += \
     system_ext_priv-app_OnePlusCamera_lib_arm64_libsnpe_dsp_v66_domains_v2_skel_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     odm_etc_acdbdata_adsp_avs_config_acdb \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so

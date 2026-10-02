@@ -265,7 +265,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/oneplus/avicii/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/oneplus/avicii/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/oneplus/avicii/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/oneplus/avicii/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm \
     vendor/oneplus/avicii/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_SM7225_2021_01_08.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_SM7225_2021_01_08.pfm \
     vendor/oneplus/avicii/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
@@ -519,33 +518,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libCameraMDMHelper \
-    libmmosal_vendor \
-    libFileMux_proprietary \
-    libmm-hdcpmgr \
-    libmmrtpdecoder_proprietary \
-    libmmrtpencoder_proprietary \
-    libwfdcodecv4l2_proprietary \
-    libwfdcommonutils_proprietary \
-    libwfdconfigutils_proprietary \
-    libwfddisplayconfig_proprietary \
-    libwfdhdcpcp \
-    libwfdhdcpservice_proprietary \
-    libwfdmminterface_proprietary \
-    libwfdmmservice_proprietary \
-    libwfdmmsrc_proprietary \
-    libwfdmodulehdcpsession \
-    libwfdrtsp_proprietary \
-    libwfdsessionmodule \
-    libwfdsourcesession_proprietary \
-    libwfdsourcesm_proprietary \
-    libwfduibcinterface_proprietary \
-    libwfduibcsink_proprietary \
-    libwfduibcsinkinterface_proprietary \
-    libwfduibcsrc_proprietary \
-    libwfduibcsrcinterface_proprietary \
-    libwfdutils_proprietary \
-    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
-    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     btaudio_offload_if \
     com.qti.eeprom.truly_cmb433 \
     com.qti.sensor.gc2375 \
@@ -665,6 +637,7 @@ PRODUCT_PACKAGES += \
     libC2D2 \
     libCB \
     libFaceBeautyLiteCap \
+    libFileMux_proprietary \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
@@ -837,6 +810,9 @@ PRODUCT_PACKAGES += \
     libminksocket \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
+    libmmosal_vendor \
+    libmmrtpdecoder_vendor \
+    libmmrtpencoder_vendor \
     libmorpho_dcface \
     libmorpho_image_refiner_deflicker \
     libmpbase \
@@ -951,6 +927,26 @@ PRODUCT_PACKAGES += \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
+    libwfdcodecv4l2_proprietary \
+    libwfdcommonutils_proprietary \
+    libwfdconfigutils_proprietary \
+    libwfddisplayconfig_vendor \
+    libwfdhdcpcp \
+    libwfdhdcpservice_proprietary \
+    libwfdmminterface_proprietary \
+    libwfdmmservice_proprietary \
+    libwfdmmsrc_proprietary \
+    libwfdmodulehdcpsession \
+    libwfdrtsp_vendor \
+    libwfdsessionmodule \
+    libwfdsourcesession_proprietary \
+    libwfdsourcesm_proprietary \
+    libwfduibcinterface_vendor \
+    libwfduibcsink_vendor \
+    libwfduibcsinkinterface_vendor \
+    libwfduibcsrc_vendor \
+    libwfduibcsrcinterface_vendor \
+    libwfdutils_proprietary \
     libwms \
     libwqe \
     libxml \
@@ -958,6 +954,7 @@ PRODUCT_PACKAGES += \
     libxtwifi_server_protocol \
     libxtwifi_server_protocol_uri_v3 \
     qcrild_librilutils \
+    qti.video.utils.videobufferlayout \
     qtibus \
     qtimutex \
     sensors.ssc \
@@ -1050,6 +1047,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -1213,6 +1212,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cameramdm.xml \
     manifest_oplus_vpp.xml \
     vendor.qti.gnss@4.0-service.xml \
+    vendor.qti.hardware.wifidisplaysession-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_oplusSensor.xml \
     manifest_oplus_fingerprint.xml \
